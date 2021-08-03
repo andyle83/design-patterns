@@ -27,5 +27,23 @@ namespace DesignPatternsTests
 
             implementor.Verify(m => m.Operation(), Times.Once);
         }
+
+        [Test]
+        public void CallingImplementors_ExpectNoException()
+        {
+            Implementor implementorA = new ConcreateImplementorA();
+            Implementor implementorB = new ConcreateImplementorB();
+
+            try
+            {
+                implementorA.Operation();
+                implementorB.Operation();
+                Assert.IsTrue(true);
+            }
+            catch
+            {
+                Assert.IsTrue(false);
+            }
+        }
     }
 }

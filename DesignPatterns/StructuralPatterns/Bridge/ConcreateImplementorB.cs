@@ -2,7 +2,7 @@
 
 namespace DesignPatterns.StructuralPatterns.Bridge
 {
-    internal class ConcreateImplementorB : Implementor
+    public class ConcreateImplementorB : Implementor
     {
         public override void Operation()
         {
