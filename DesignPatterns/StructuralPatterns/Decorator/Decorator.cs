@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DesignPatterns.StructuralPatterns.Decorator
+﻿namespace DesignPatterns.StructuralPatterns.Decorator
 {
     /// <summary>
     /// Decorator Pattern
